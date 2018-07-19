@@ -13,11 +13,9 @@
 
 <body>
   <div id="app">
-    <h1>simple uploader</h1>
-
     <div class="d-flex justify-content-center">
       <div id="request-token" class="container">
-        <h3>request token</h3>
+        <h3>Register</h3>
         <input v-model="email" type="text" name="email" placeholder="Email">
         <br>
         <input v-model="name" type="text" name="name" placeholder="Name">
@@ -26,7 +24,7 @@
       </div>
 
       <div id="upload-image" class="container">
-        <h3>upload image</h3>
+        <h3>Upload Your Image Here</h3>
         <input class="inputImage" type="file" name="image" ref="image" v-on:change="handleImage">
         <br>
         <button v-on:click="uploadImage">Upload</button>
